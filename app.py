@@ -6,13 +6,14 @@ import uvicorn
 from Routes import healthcheck
 from Routes import homepage
 from Routes import thankYouPage
-
+from Routes import cartpage
 
 app = FastAPI()
 
 app.include_router(healthcheck.router)
 app.include_router(homepage.router)
 app.include_router(thankYouPage.router)
+app.include_router(cartpage.router)
 
 
 app.mount("/Resources", StaticFiles(directory="Resources"), name="Resources")
