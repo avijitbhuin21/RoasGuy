@@ -17,6 +17,8 @@ app.include_router(cartpage.router)
 
 
 app.mount("/Resources", StaticFiles(directory="Resources"), name="Resources")
+app.mount("/styles", StaticFiles(directory="style"), name="styles")
+
 
 
 @app.exception_handler(404)
