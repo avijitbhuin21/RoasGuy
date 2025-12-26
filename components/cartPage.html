@@ -31,10 +31,9 @@
         --placeholder-color: #929292;
         --divider-color: #ffffff;
         --page-width: 1512px;
-        --nav-shadow: 0px 4px 4px #08a4ff;
-        --toggle-bg: #d9d9d9;
+        --nav-shadow: 0px 4px 28.7px #08a4ff;
+        --toggle-bg: #ffffff;
         --toggle-circle: #d9d9d9;
-        --toggle-inner-bg: #000000;
         --gradient-overlay: linear-gradient(
           90deg,
           rgba(255, 255, 255, 0.35) 34.51%,
@@ -50,10 +49,9 @@
         --text-primary: #ffffff;
         --text-secondary: #ffffff;
         --divider-color: #ffffff;
-        --nav-shadow: 0px 4px 4px #08a4ff;
-        --toggle-bg: #d9d9d9;
-        --toggle-circle: #d9d9d9;
-        --toggle-inner-bg: #000000;
+        --nav-shadow: 0px 4px 28.7px rgba(8, 164, 255, 0.3);
+        --toggle-bg: #333333;
+        --toggle-circle: #ffffff;
         --gradient-overlay: linear-gradient(
           90deg,
           rgba(44, 44, 44, 0.35) 34.51%,
@@ -224,9 +222,8 @@
       /* Theme Toggle */
       .theme-switch {
         position: relative;
-        width: 56px;
-        height: 28px;
-        display: inline-block;
+        width: 6vh;
+        height: 3vh;
       }
 
       .theme-switch input {
@@ -242,38 +239,30 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #e0e0e0;
-        border-radius: 28px;
-        border: 2px solid #08a4ff;
+        background-color: var(--toggle-bg);
+        border-radius: 3vh;
+        border: 0.2vh solid #888;
         transition: 0.4s;
       }
 
       .slider:before {
         position: absolute;
         content: "";
-        height: 20px;
-        width: 20px;
-        left: 2px;
-        bottom: 2px;
-        background-color: #08a4ff;
+        height: 2vh;
+        width: 2vh;
+        left: 0.3vh;
+        bottom: 0.3vh;
+        background-color: var(--toggle-circle);
         border-radius: 50%;
         transition: 0.4s;
       }
 
-      /* Dark mode toggle appearance */
-      body.dark-mode .slider {
-        background-color: #333333;
-        border-color: #08a4ff;
+      input:checked + .slider {
+        border-color: white;
       }
 
-      body.dark-mode .slider:before {
-        background-color: #08a4ff;
-        transform: translateX(28px);
-      }
-
-      /* Light mode toggle - circle on the left */
-      body:not(.dark-mode) .slider:before {
-        transform: translateX(0);
+      input:checked + .slider:before {
+        transform: translateX(3vh);
       }
 
       /* Nav Button */
@@ -822,21 +811,22 @@
 
         .theme-switch {
           width: 34px;
-          height: 14px;
+          height: 14.38px;
         }
 
         .slider {
           border-radius: 41px;
+          border-width: 0.15vh;
         }
 
         .slider:before {
           height: 11px;
           width: 11px;
-          left: 1px;
-          bottom: 0.5px;
+          left: 0.2vh;
+          bottom: 0.15vh;
         }
 
-        body.dark-mode .slider:before {
+        input:checked + .slider:before {
           transform: translateX(18px);
         }
 
@@ -1076,6 +1066,51 @@
       /* Add horizontal divider for mobile */
       .horizontal-divider-mobile {
         display: none;
+      }
+      /* Theme Toggle Switch */
+      .theme-switch {
+        position: relative;
+        width: 6vh;
+        height: 3vh;
+      }
+
+      .theme-switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--toggle-bg);
+        border-radius: 3vh;
+        border: 0.2vh solid #888;
+        transition: 0.4s;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 2vh;
+        width: 2vh;
+        left: 0.3vh;
+        bottom: 0.3vh;
+        background-color: var(--toggle-circle);
+        border-radius: 50%;
+        transition: 0.4s;
+      }
+
+      input:checked + .slider {
+        border-color: white;
+      }
+
+      input:checked + .slider:before {
+        transform: translateX(3vh);
       }
     </style>
   </head>
@@ -1551,19 +1586,16 @@
     <script>
       // Theme toggle functionality
       const themeToggle = document.getElementById('theme-toggle');
-      
-      // Initialize toggle state based on current theme
-      if (document.body.classList.contains('dark-mode')) {
-        themeToggle.checked = true;
-      }
-      
-      // Add event listener to toggle - only use change event
-      themeToggle.addEventListener('change', function() {
-        toggleTheme();
-      });
-      
+
       function toggleTheme() {
         document.body.classList.toggle("dark-mode");
+        
+        // Store the current theme preference
+        if (document.body.classList.contains('dark-mode')) {
+            localStorage.setItem('theme', 'dark');
+        } else {
+            localStorage.setItem('theme', 'light');
+        }
 
         // Toggle logo visibility
         const logoDark = document.querySelector(".logo-dark");
@@ -1576,6 +1608,35 @@
           if (logoDark) logoDark.style.display = "none";
           if (logoLight) logoLight.style.display = "block";
         }
+      }
+
+      // Check for saved theme preference on page load
+      document.addEventListener('DOMContentLoaded', (event) => {
+        const savedTheme = localStorage.getItem('theme');
+        // Default to dark mode if no preference or if preference is dark
+        if (savedTheme === 'dark' || !savedTheme) {
+            document.body.classList.add('dark-mode');
+            if (themeToggle) themeToggle.checked = true;
+        } else {
+            document.body.classList.remove('dark-mode');
+            if (themeToggle) themeToggle.checked = false;
+        }
+        
+        // Ensure logos are correct on load
+        const logoDark = document.querySelector(".logo-dark");
+        const logoLight = document.querySelector(".logo-light");
+        if (document.body.classList.contains("dark-mode")) {
+          if (logoDark) logoDark.style.display = "block";
+          if (logoLight) logoLight.style.display = "none";
+        } else {
+          if (logoDark) logoDark.style.display = "none";
+          if (logoLight) logoLight.style.display = "block";
+        }
+      });
+      
+      // Add event listener to toggle
+      if (themeToggle) {
+        themeToggle.addEventListener('change', toggleTheme);
       }
 
       function handlePayment() {
