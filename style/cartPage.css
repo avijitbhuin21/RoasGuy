@@ -283,46 +283,37 @@
            ========================================= */
       .refund-banner {
         width: 100%;
-        height: 20px;
+        height: 25px;
         background: var(--deep-blue);
         display: flex;
-        justify-content: flex-start;
         align-items: center;
         margin-top: 12vh;
         overflow: hidden;
+        position: relative;
       }
 
       .marquee-track {
         display: flex;
         align-items: center;
-        width: fit-content;
-        animation: scroll-left 25s linear infinite;
+        position: absolute;
+        animation: marquee-scroll 15s linear infinite;
       }
 
-      .marquee-group {
-        display: flex;
-        align-items: center;
-        flex-shrink: 0;
-        min-width: 100%;
-        justify-content: space-around;
-      }
-
-      .marquee-group span {
+      .marquee-text {
         color: #ffffff;
-        font-size: 1.8vh;
+        font-size: 14px;
         font-weight: 400;
-        text-align: center;
-        letter-spacing: 0.05vw;
+        letter-spacing: 0.5px;
         white-space: nowrap;
-        padding: 0 5vw;
+        padding: 0 20px;
       }
 
-      @keyframes scroll-left {
+      @keyframes marquee-scroll {
         0% {
-          transform: translateX(0);
+          transform: translateX(100vw);
         }
         100% {
-          transform: translateX(-50%);
+          transform: translateX(-100%);
         }
       }
 
