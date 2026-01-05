@@ -122,7 +122,7 @@ body {
    ========================================= */
 
 .navbar {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100vw;
@@ -631,7 +631,6 @@ input:checked+.slider:before {
        HERO SECTION
        ========================================= */
 .hero-container {
-  margin-top: 12vh;
   /* Push below navbar */
   width: 100vw;
   position: relative;
