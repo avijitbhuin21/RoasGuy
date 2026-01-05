@@ -7,13 +7,14 @@ from Routes import healthcheck
 from Routes import homepage
 from Routes import thankYouPage
 from Routes import cartpage
-
+from Routes import advancedHomepage
 app = FastAPI()
 
 app.include_router(healthcheck.router)
 app.include_router(homepage.router)
 app.include_router(thankYouPage.router)
 app.include_router(cartpage.router)
+app.include_router(advancedHomepage.router)
 
 
 app.mount("/Resources", StaticFiles(directory="Resources"), name="Resources")
