@@ -122,7 +122,7 @@ body {
    ========================================= */
 
 .navbar {
-  position: relative;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100vw;
@@ -669,7 +669,9 @@ input:checked+.slider:before {
   align-items: center;
   margin-bottom: 5vh;
   overflow: hidden;
-  position: relative;
+  position: sticky;
+  top: 12vh;
+  z-index: 999;
 }
 
 .marquee-track {
@@ -4509,6 +4511,7 @@ body.dark-mode .footer-image .footer-svg-dark {
     height: 30px;
     padding: 1px 0;
     margin-bottom: 30px;
+    top: 53px;
   }
 
   .marquee-group span {
