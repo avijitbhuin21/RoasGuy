@@ -8,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../style/advancedHomePage.css" />
+  <link rel="stylesheet" href="/style/advancedHomePage.css?v=3" />
+
 </head>
 
 <body>
@@ -57,6 +58,19 @@
           Psychology Driven <br>
           <span>Advanced Meta Ads Course</span>
         </h1>
+
+        <!-- Mobile-Only Video Duplicate -->
+        <div class="video-card-wrapper mobile-video-only">
+          <div class="video-card" role="button" tabindex="0" aria-label="Play course intro">
+            <img src="../Resources/HomePage/thumbnail.jpg" alt="Facebook Ads Course Thumbnail" class="video-thumb" />
+            <div class="play-btn" aria-hidden="true">
+              <svg class="play-icon" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
         <p class="hero-desc neue-font">
           Anyone can publish an ad. But very few know how to turn ₹1 into ₹5.
         </p>
@@ -74,7 +88,7 @@
       <!-- Right: Video Card -->
       <div class="video-col video-col-mobile">
         <!-- Thumbnail card -->
-        <div class="video-card-wrapper">
+        <div class="video-card-wrapper desktop-video-only">
           <div class="video-card" role="button" tabindex="0" aria-label="Play course intro">
             <img src="../Resources/HomePage/thumbnail.jpg" alt="Facebook Ads Course Thumbnail" class="video-thumb" />
 
@@ -117,7 +131,8 @@
       <div class="struggles-card">
         <div class="struggles-card-image">
           <!-- Placeholder - replace with actual illustration -->
-          <img src="../Resources/AdvHomePage/s1.png" alt="">
+          <img class="struggles-card-light" src="../Resources/AdvHomePage/s1.png" alt="">
+          <img class="struggles-card-dark" src="../Resources/AdvHomePage/s1-dark.png" alt="">
         </div>
         <h3 class="struggles-card-title">Getting Sales In Consistently</h3>
         <p class="struggles-card-desc">
@@ -129,7 +144,8 @@
       <div class="struggles-card">
         <div class="struggles-card-image">
           <!-- Placeholder - replace with actual illustration -->
-          <img src="../Resources/AdvHomePage/s2.png" alt="">
+          <img class="struggles-card-light" src="../Resources/AdvHomePage/s2.png" alt="">
+          <img class="struggles-card-dark" src="../Resources/AdvHomePage/s2-dark.png" alt="">
         </div>
         <h3 class="struggles-card-title">Weak Offers</h3>
         <p class="struggles-card-desc">
@@ -141,7 +157,8 @@
       <div class="struggles-card">
         <div class="struggles-card-image">
           <!-- Placeholder - replace with actual illustration -->
-          <img src="../Resources/AdvHomePage/s3.png" alt="">
+          <img class="struggles-card-light" src="../Resources/AdvHomePage/s3.png" alt="">
+          <img class="struggles-card-dark" src="../Resources/AdvHomePage/s3-dark.png" alt="">
         </div>
         <h3 class="struggles-card-title">No Funnel Clarity</h3>
         <p class="struggles-card-desc">
@@ -153,7 +170,8 @@
       <div class="struggles-card">
         <div class="struggles-card-image">
           <!-- Placeholder - replace with actual illustration -->
-          <img src="../Resources/AdvHomePage/s4.png" alt="">
+          <img class="struggles-card-light" src="../Resources/AdvHomePage/s4.png" alt="">
+          <img class="struggles-card-dark" src="../Resources/AdvHomePage/s4-dark.png" alt="">
         </div>
         <h3 class="struggles-card-title">Ad Fatigue & Poor Performance</h3>
         <p class="struggles-card-desc">
@@ -165,7 +183,8 @@
       <div class="struggles-card">
         <div class="struggles-card-image">
           <!-- Placeholder - replace with actual illustration -->
-          <img src="../Resources/AdvHomePage/s5.png" alt="">
+          <img class="struggles-card-light" src="../Resources/AdvHomePage/s5.png" alt="">
+          <img class="struggles-card-dark" src="../Resources/AdvHomePage/s5-dark.png" alt="">
         </div>
         <h3 class="struggles-card-title">Understanding Data</h3>
         <p class="struggles-card-desc">
@@ -177,7 +196,8 @@
       <div class="struggles-card">
         <div class="struggles-card-image">
           <!-- Placeholder - replace with actual illustration -->
-          <img src="../Resources/AdvHomePage/s6.png" alt="">
+          <img class="struggles-card-light" src="../Resources/AdvHomePage/s6.png" alt="">
+          <img class="struggles-card-dark" src="../Resources/AdvHomePage/s6-dark.png" alt="">
         </div>
         <h3 class="struggles-card-title">Relying Too Much on Agencies or AI</h3>
         <p class="struggles-card-desc">
@@ -658,8 +678,6 @@
       Don't just take my word for it <span class="proof-dash">—</span>
       <span class="proof-highlight">
         see the results
-        <img src="../Resources/HomePage/circle.svg" class="proof-circle" />
-        <img src="../Resources/HomePage/under-line.png" class="proof-underline" />
       </span>
     </p>
 
@@ -670,7 +688,7 @@
         <div class="proof-card-image">
           <div class="card-image-shadow"></div>
           <div class="card-image-content">
-            <img src="../Resources/HomePage/proof1.gif" alt="Performance Screenshot 1" />
+            <img src="../Resources/AdvHomePage/proof-1.gif" alt="Performance Screenshot 1" />
             <div class="blur-on-gif-result"></div>
           </div>
         </div>
@@ -709,7 +727,7 @@
         <div class="proof-card-image">
           <div class="card-image-shadow"></div>
           <div class="card-image-content">
-            <img src="../Resources/HomePage/proof2.gif" alt="Performance Screenshot 2" />
+            <img src="../Resources/AdvHomePage/proof-2.gif" alt="Performance Screenshot 2" />
           </div>
         </div>
       </div>
@@ -719,7 +737,7 @@
         <div class="proof-card-image">
           <div class="card-image-shadow"></div>
           <div class="card-image-content">
-            <img src="../Resources/HomePage/proof3.gif" alt="Performance Screenshot 3" />
+            <img src="../Resources/AdvHomePage/proof-3.gif" alt="Performance Screenshot 3" />
           </div>
         </div>
         <div class="proof-card-metrics">
@@ -757,7 +775,7 @@
         <div class="proof-card-image">
           <div class="card-image-shadow"></div>
           <div class="card-image-content">
-            <img src="../Resources/HomePage/proof4.gif" alt="Performance Screenshot 4" />
+            <img src="../Resources/AdvHomePage/proof-4.gif" alt="Performance Screenshot 4" />
           </div>
         </div>
       </div>
@@ -767,7 +785,7 @@
         <div class="proof-card-image">
           <div class="card-image-shadow"></div>
           <div class="card-image-content">
-            <img src="../Resources/HomePage/proof5.jpg" alt="Performance Screenshot 5" />
+            <img src="../Resources/AdvHomePage/proof-5.jpg" alt="Performance Screenshot 5" />
           </div>
         </div>
         <div class="proof-card-metrics">
@@ -805,7 +823,7 @@
         <div class="proof-card-image">
           <div class="card-image-shadow"></div>
           <div class="card-image-content">
-            <img src="../Resources/HomePage/proof6.jpg" alt="Performance Screenshot 6" />
+            <img src="../Resources/AdvHomePage/proof-6.jpg" alt="Performance Screenshot 6" />
           </div>
         </div>
       </div>
@@ -815,7 +833,7 @@
         <div class="proof-card-image">
           <div class="card-image-shadow"></div>
           <div class="card-image-content">
-            <img src="../Resources/HomePage/proof7.jpg" alt="Performance Screenshot 7" />
+            <img src="../Resources/AdvHomePage/proof-7.jpg" alt="Performance Screenshot 7" />
           </div>
         </div>
         <div class="proof-card-metrics">
@@ -853,7 +871,7 @@
         <div class="proof-card-image">
           <div class="card-image-shadow"></div>
           <div class="card-image-content">
-            <img src="../Resources/HomePage/proof8.jpg" alt="Performance Screenshot 8" />
+            <img src="../Resources/AdvHomePage/proof-8.jpg" alt="Performance Screenshot 8" />
           </div>
         </div>
       </div>
@@ -863,7 +881,7 @@
         <div class="proof-card-image">
           <div class="card-image-shadow"></div>
           <div class="card-image-content">
-            <img src="../Resources/HomePage/proof9.jpg" alt="Performance Screenshot 9" />
+            <img src="../Resources/AdvHomePage/proof-9.jpg" alt="Performance Screenshot 9" />
           </div>
         </div>
         <div class="proof-card-metrics">
@@ -901,282 +919,499 @@
         <div class="proof-card-image">
           <div class="card-image-shadow"></div>
           <div class="card-image-content">
-            <img src="../Resources/HomePage/proof10.jpg" alt="Performance Screenshot 10" />
+            <img src="../Resources/AdvHomePage/proof-10.jpg" alt="Performance Screenshot 10" />
             <div class="blur-on-image-result"></div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="additional-access" id="additional-access">
-    <!-- Section Header -->
-    <div class="additional-access-header">
-      <h2 class="additional-access-title">
-        When you join this course, you'll<br />also get access to:
+
+  <!-- MARKETING STATS CAROUSEL SECTION -->
+  <section class="stats-carousel-section">
+    <div class="stats-carousel-container" id="stats-carousel">
+      <div class="stats-carousel-track" id="stats-carousel-track">
+        
+        <!-- Slide 1 -->
+        <div class="stats-carousel-slide">
+          <div class="stats-slide-content" style="background: url('../Resources/AdvHomePage/carousel-1.png') center/cover no-repeat;">
+            <div class="stats-slide-overlay"></div>
+            <div class="stats-slide-text">
+              <h3 class="stats-slide-headline">7 out of 10<br>marketers</h3>
+              <p class="stats-slide-description">say they don't fully understand why their ads aren't converting.</p>
+              <p class="stats-slide-source">Source: HubSpot State of Marketing Report, 2024</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="stats-carousel-slide">
+          <div class="stats-slide-content" style="background: url('../Resources/AdvHomePage/carousel-2.png') center/cover no-repeat;">
+            <div class="stats-slide-overlay"></div>
+            <div class="stats-slide-text">
+              <p class="stats-slide-description stats-slide-description-large">Sam Altman says up to 95% of creative marketing work could be handled by AI in the future. Only marketers with strategy & insight will stay relevant.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="stats-carousel-slide">
+          <div class="stats-slide-content" style="background: url('../Resources/AdvHomePage/carousel-3.png') center/cover no-repeat;">
+            <div class="stats-slide-overlay"></div>
+            <div class="stats-slide-text">
+              <p class="stats-slide-description stats-slide-description-large">"AI tools are helping with targeting and automation—but human creativity, empathy & understanding customer behavior still matter more than ever."</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- EXCLUSIVE BONUS BUNDLES SECTION -->
+  <section class="bonus-bundles-section">
+    <div class="bonus-header-container">
+      <h2 class="bonus-section-title">
+        Exclusive Bonus Bundles <span class="bonus-worth">(Worth 10,000+)</span>
       </h2>
-      <img class="additional-access-wave" src="../Resources/HomePage/under-line.png" alt="" />
     </div>
-
-    <!-- Access Items Container -->
-    <div class="access-items-container">
-      <!-- Item 1: Beginners Meta Ads Guide - Content Left, Icon Right -->
-      <div class="access-item item-content-top">
-        <div class="access-item-content">
-          <div class="access-pricing">
-            <span class="original-price">
-              ₹1999
-              <img src="../Resources/HomePage/strike.png" alt="" class="price-strike" />
-            </span>
-            <div class="free-badge"><span class="free-text">Free</span></div>
-          </div>
-          <h3 class="access-item-title">Beginners Meta Ads Guide</h3>
-          <p class="access-item-desc">
-            A simple, step-by-step handbook to understand the basics of Meta
-            Ads and avoid beginner mistakes.
-          </p>
+    <div class="bonus-grid">
+      <!-- Card 1 -->
+      <div class="bonus-card">
+        <div class="bonus-image-wrapper">
+          <img src="../Resources/AdvHomePage/bonus-1.png" alt="The ROASGUY Toolkit" />
         </div>
-        <div class="access-item-image">
-          <img src="../Resources/HomePage/meta-icon-light.png" alt="Meta Icon" class="access-icon icon-light" />
-          <img src="../Resources/HomePage/meta-icon-dark.png" alt="Meta Icon" class="access-icon icon-dark" />
+        <div class="bonus-content">
+           <h3 class="bonus-card-title">The ROASGUY Toolkit<br/>(₹2,499 Value)</h3>
+           <p class="bonus-description">Everything you need to plan, write, launch, fix, and scale your Meta ads—without second-guessing.</p>
+           <ul class="bonus-list">
+             <li>Ad Copy & Hook Formula Guide</li>
+             <li>Media Planning & Reporting Sheet</li>
+             <li>Marketing Formulas Cheat Sheet</li>
+             <li>Budget Calculator</li>
+             <li>Audience Avatar Builder</li>
+           </ul>
         </div>
       </div>
-
-      <!-- Item 2: Media Planning & Reporting Template - Icon Left, Content Right -->
-      <div class="access-item item-content-top">
-        <div class="access-item-image">
-          <img src="../Resources/HomePage/media-icon-light.png" alt="Media Icon" class="access-icon icon-light" />
-          <img src="../Resources/HomePage/media-icon-dark.png" alt="Media Icon" class="access-icon icon-dark" />
+      <!-- Card 2 -->
+      <div class="bonus-card">
+        <div class="bonus-image-wrapper">
+          <img src="../Resources/AdvHomePage/bonus-2.png" alt="The Ad Performance Bundle" />
         </div>
-        <div class="access-item-content">
-          <div class="access-pricing">
-            <span class="original-price">
-              ₹999
-              <img src="../Resources/HomePage/strike.png" alt="" class="price-strike" />
-            </span>
-            <div class="free-badge"><span class="free-text">Free</span></div>
-          </div>
-          <h3 class="access-item-title">
-            Media Planning & Reporting Template
-          </h3>
-          <p class="access-item-desc">
-            A ready-to-use template to plan, track, and measure your ad
-            campaigns like a pro.
-          </p>
+        <div class="bonus-content">
+           <div class="bonus-title-row">
+             <h3 class="bonus-card-title">The Ad Performance Bundle</h3>
+             <span class="bonus-value">(₹2,499 Value)</span>
+           </div>
+           <ul class="bonus-list">
+             <li>30 High-Converting Hooks & Headlines</li>
+             <li>Retargeting Ads Guide</li>
+             <li>Top-Performing Ad Examples Vault</li>
+             <li>Ad Messaging by Funnel Stage</li>
+             <li>Easy Prompts to Write Ads</li>
+           </ul>
         </div>
       </div>
-
-      <!-- Item 3: Ad Copy & Hook Formula Guide - Content Left, Icon Right -->
-      <div class="access-item item-content-bottom">
-        <div class="access-item-content">
-          <div class="access-pricing">
-            <span class="original-price">
-              ₹499
-              <img src="../Resources/HomePage/strike.png" alt="" class="price-strike" />
-            </span>
-            <div class="free-badge"><span class="free-text">Free</span></div>
-          </div>
-          <h3 class="access-item-title">Ad Copy & Hook Formula Guide</h3>
-          <p class="access-item-desc">
-            Plug-and-play formulas to write scroll-stopping ad copy and
-            powerful hooks that convert.
-          </p>
+      <!-- Card 3 -->
+      <div class="bonus-card">
+        <div class="bonus-image-wrapper">
+          <img src="../Resources/AdvHomePage/bonus-3.png" alt="The Facebook Ads Survival Pack" />
         </div>
-        <div class="access-item-image">
-          <img src="../Resources/HomePage/copy-icon-light.png" alt="Copy Icon" class="access-icon icon-light" />
-          <img src="../Resources/HomePage/copy-icon-dark.png" alt="Copy Icon" class="access-icon icon-dark" />
+        <div class="bonus-content">
+           <div class="bonus-title-row">
+             <h3 class="bonus-card-title">The Facebook Ads Survival Pack</h3>
+             <span class="bonus-value">(₹2,499 Value)</span>
+           </div>
+           <ul class="bonus-list">
+             <li>Funnel & Budget Planner</li>
+             <li>Retargeting Checklist</li>
+             <li>Media Plan Template</li>
+             <li>Why Meta Bans Ad Accounts & How to Recover Them</li>
+             <li>How to Create Instagram Professional & Creator Accounts</li>
+           </ul>
         </div>
       </div>
-
-      <!-- Item 4: Why Meta Bans Ad Accounts - Blue Background Box -->
-      <div class="access-item item-content-bottom">
-        <div class="access-item-image">
-          <img src="../Resources/HomePage/stop-icon-light.png" alt="Stop Icon" class="access-icon icon-light" />
-          <img src="../Resources/HomePage/stop-icon-dark.png" alt="Stop Icon" class="access-icon icon-dark" />
+      <!-- Card 4 -->
+      <div class="bonus-card">
+        <div class="bonus-image-wrapper">
+          <img src="../Resources/AdvHomePage/bonus-4.png" alt="The Growth Accelerator Bundle" />
         </div>
-        <div class="access-item-content">
-          <div class="access-pricing">
-            <span class="original-price">
-              ₹499
-              <img src="../Resources/HomePage/strike.png" alt="" class="price-strike" />
-            </span>
-            <div class="free-badge"><span class="free-text">Free</span></div>
-          </div>
-          <h3 class="access-item-title">Why Meta Bans Ad Accounts</h3>
-          <p class="access-item-desc">
-            Understand the exact reasons accounts get restricted and how to
-            protect yours from being banned.
-          </p>
+        <div class="bonus-content">
+           <div class="bonus-title-row">
+             <h3 class="bonus-card-title">The Growth Accelerator Bundle</h3>
+             <span class="bonus-value">(Infinite Value)</span>
+           </div>
+           <ul class="bonus-list">
+             <li>Private Community Access (lifetime)</li>
+             <li>1-1 Campaign Audit (Limited to First 50)</li>
+             <li>Weekly Q&A Sessions</li>
+             <li>Lifetime Course Updates</li>
+           </ul>
         </div>
       </div>
     </div>
   </section>
-  <section class="get-certified-section">
-    <div class="get-certified-container">
-      <!-- Title -->
-      <h2 class="get-certified-title">
-        Get <span class="certified-highlight">Certified</span>
-      </h2>
 
-      <!-- Decorative objects (dots/lines) -->
-      <div class="certified-objects">
-        <svg width="137" height="12" viewBox="0 0 137 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M2.04442 2.69609L52.0552 3.02032C65.28 3.10642 78.5047 3.19252 91.7295 3.27727C89.5306 3.41719 87.3333 3.5571 85.1344 3.69567C70.091 4.65086 55.0475 5.60738 40.0056 6.56257C31.5603 7.09935 23.1151 7.63614 14.6698 8.17158C13.7675 8.22943 12.5403 8.67877 12.2848 9.49807C12.0482 10.2555 12.81 10.8286 13.6855 10.8622C29.5161 11.4703 45.3592 11.8309 61.2056 11.9533C76.8611 12.0757 92.5197 11.9573 108.172 11.5995C116.964 11.399 125.755 11.1205 134.541 10.7694C135.491 10.7317 136.866 10.1761 136.991 9.26802C137.123 8.31284 135.798 8.04108 134.958 8.07472C119.318 8.7003 103.665 9.0891 88.01 9.23708C73.1243 9.377 58.4152 9.29897 43.5989 9.00434C48.861 8.66935 54.1232 8.33571 59.3853 8.00072C74.4288 7.04554 89.4722 6.08901 104.514 5.13383C112.959 4.59704 121.405 4.06026 129.85 3.52482C130.801 3.46428 132.172 2.94632 132.3 2.02343C132.435 1.03865 131.102 0.835502 130.266 0.830121C113.597 0.722495 96.9254 0.613523 80.2556 0.505897C63.6742 0.398271 47.0912 0.290644 30.5098 0.183018C21.1591 0.121133 11.8084 0.0605931 2.45927 5.32747e-05C1.51442 -0.00667337 0.13106 0.624286 0.00960142 1.50144C-0.126053 2.48622 1.20683 2.68937 2.04284 2.69475L2.04442 2.69609Z"
-            fill="black" />
-        </svg>
-      </div>
-
-      <!-- Certificate Image -->
-      <div class="get-certified-image">
-        <img class="certificate-light" src="../Resources/HomePage/certificate_light.png"
-          alt="ROAS School Of Marketing Certificate" />
-        <img class="certificate-dark" src="../Resources/HomePage/certificate_dark.png"
-          alt="ROAS School Of Marketing Certificate" />
-      </div>
-
-      <!-- Benefits List -->
-      <div class="certification-benefits">
-        <div class="benefit-item">
-          <img class="benefit-icon" src="../Resources/HomePage/crown.png" alt="" />
-          <span>Earn your credential of Expertise</span>
-        </div>
-        <div class="benefit-item">
-          <img class="benefit-icon" src="../Resources/HomePage/share.png" alt="" />
-          <span>Share your verified certificate</span>
-        </div>
-        <div class="benefit-item">
-          <img class="benefit-icon" src="../Resources/HomePage/linkedin.png" alt="" />
-          <span>Add certificate to your Linkedin</span>
-        </div>
-      </div>
-
-      <!-- Enroll Button -->
-      <a href="/cartpage" class="btn-enroll-cert">
-        <span class="btn-enroll-cert-text">Enroll Now</span>
-      </a>
-    </div>
-  </section>
-  <!-- NO-NONSENSE APPROACH SECTION -->
-  <section class="no-nonsense-section" id="pricing">
-    <div class="no-nonsense-container">
-      <!-- Left Side - Illustration -->
-      <div class="no-nonsense-illustration">
-        <img src="../Resources/HomePage/certificate-non-sense.png" alt="No-nonsense approach illustration"
-          class="illustration-img" />
-      </div>
-
-      <!-- Right Side - Content -->
-      <div class="no-nonsense-content">
-        <h2 class="no-nonsense-title">
-          No-nonsense Approach.<br />
-          <span class="highlight-blue">Practical Delivery.</span><br />
-          Risk-free Investment.
-        </h2>
-
-        <div class="no-nonsense-features">
-          <!-- Feature 1 -->
-          <div class="feature-block">
-            <h3 class="feature-heading">One-Time Fee of ₹999</h3>
-            <p class="feature-description">
-              Learn how to run the facebook ads the right way at affordable
-              price
-            </p>
-          </div>
-
-          <!-- Feature 2 -->
-          <div class="feature-block">
-            <h3 class="feature-heading">4 Live Classes Included</h3>
-            <p class="feature-description">
-              Get direct guidance, clear doubts, and learn interactively.
-            </p>
-          </div>
-
-          <!-- Feature 3 -->
-          <div class="feature-block">
-            <h3 class="feature-heading">100% refund</h3>
-            <p class="feature-description">
-              If you are not satisfied you can get your 100% refund back
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Enroll Button -->
-    <a href="/cartpage" class="btn-enroll-no-nonsense">
-      <span class="btn-enroll-text">Enroll Now</span>
-    </a>
-  </section>
-
-  <!-- COURSE FOR YOU SECTION -->
-  <section class="course-for-you-section">
-    <div class="course-for-you-container">
-      <!-- Left Column - This course is for you if... -->
-      <div class="course-for-you-left">
-        <div class="course-for-you-header-box">
-          <span class="course-for-you-header-text">This course is for you if…</span>
-        </div>
-        <div class="course-for-you-items">
-          <div class="course-for-you-item">
-            <img src="../Resources/HomePage/right-tick.png" />
-            <span class="course-for-you-text">You want to run Facebook Ads but feel confused about where to
-              start</span>
-          </div>
-          <div class="course-for-you-item">
-            <img src="../Resources/HomePage/right-tick.png" />
-            <span class="course-for-you-text">You've tried boosting posts but never got real results</span>
-          </div>
-          <div class="course-for-you-item">
-            <img src="../Resources/HomePage/right-tick.png" />
-            <span class="course-for-you-text">You want to learn how to set up ads properly without wasting
-              money</span>
-          </div>
-          <div class="course-for-you-item">
-            <img src="../Resources/HomePage/right-tick.png" />
-            <span class="course-for-you-text">You're a student, beginner, or business owner curious about
-              Meta Ads</span>
-          </div>
-          <div class="course-for-you-item">
-            <img src="../Resources/HomePage/right-tick.png" />
-            <span class="course-for-you-text">You want a clear, step-by-step method to launch your first ad
-              confidently</span>
-          </div>
-        </div>
+  <!-- COURSE FIT SECTION - For/Not For You -->
+  <section class="course-fit-section">
+    <div class="course-fit-container">
+      <!-- Left Column - This course IS for you -->
+      <div class="course-fit-column fit-for-you">
+        <h3 class="course-fit-title">This course is for you if…</h3>
+        <div class="course-fit-divider"></div>
+        <ul class="course-fit-list">
+          <li>
+            <span class="fit-icon fit-check">
+             <img src="../Resources/AdvHomePage/fit-check-icon.png"/>
+            </span>
+            <span class="fit-text">You've run ads before but feel stuck at the "dashboard level."</span>
+          </li>
+          <li>
+            <span class="fit-icon fit-check">
+             <img src="../Resources/AdvHomePage/fit-check-icon.png"/>
+            </span>
+            <span class="fit-text">You want to understand why customers actually buy, not just how to click buttons.</span>
+          </li>
+          <li>
+            <span class="fit-icon fit-check">
+             <img src="../Resources/AdvHomePage/fit-check-icon.png"/>
+            </span>
+            <span class="fit-text">You're ready to learn targeting, offers, funnels, and copy that make ads convert.</span>
+          </li>
+          <li>
+            <span class="fit-icon fit-check">
+             <img src="../Resources/AdvHomePage/fit-check-icon.png"/>
+            </span>
+            <span class="fit-text">You want to build campaigns that work in the AI era (where routine work is automated).</span>
+          </li>
+          <li>
+            <span class="fit-icon fit-check">
+             <img src="../Resources/AdvHomePage/fit-check-icon.png"/>
+            </span>
+            <span class="fit-text">You want step-by-step assignments and feedback to actually practice, not just learn theory.</span>
+          </li>
+          <li>
+            <span class="fit-icon fit-check">
+             <img src="../Resources/AdvHomePage/fit-check-icon.png"/>
+            </span>
+            <span class="fit-text">You're committed to building a long-term skill that can grow your career or business.</span>
+          </li>
+        </ul>
       </div>
 
       <!-- Vertical Divider -->
-      <div class="course-for-you-divider"></div>
+      <div class="course-fit-vertical-divider"></div>
 
-      <!-- Right Column - This course is not for you if... -->
-      <div class="course-for-you-right">
-        <h2 class="course-not-for-you-header">
-          This course is not for you if…
-        </h2>
-        <div class="course-for-you-items">
-          <div class="course-for-you-item">
-            <img src="../Resources/HomePage/cross-mark.png" alt="Cross Icon" />
-            <span class="course-for-you-text">You already run advanced Meta Ads campaigns and understand
-              funnels</span>
+      <!-- Right Column - This course is NOT for you -->
+      <div class="course-fit-column fit-not-for-you">
+        <h3 class="course-fit-title">This course is not for you if…</h3>
+        <div class="course-fit-divider"></div>
+        <ul class="course-fit-list">
+          <li>
+            <span class="fit-icon fit-ban">
+              <img src="../Resources/AdvHomePage/fit-cross-icon.png"/>
+            </span>
+            <span class="fit-text">You've never run an ad and aren't willing to learn the basics first.</span>
+          </li>
+          <li>
+            <span class="fit-icon fit-ban">
+              <img src="../Resources/AdvHomePage/fit-cross-icon.png"/>
+            </span>
+            <span class="fit-text">You're only looking for quick hacks or "copy-paste" templates.</span>
+          </li>
+          <li>
+            <span class="fit-icon fit-ban">
+              <img src="../Resources/AdvHomePage/fit-cross-icon.png"/>
+            </span>
+            <span class="fit-text">You think AI will do all the work and you don't need to understand people.</span>
+          </li>
+          <li>
+            <span class="fit-icon fit-ban">
+              <img src="../Resources/AdvHomePage/fit-cross-icon.png"/>
+            </span>
+            <span class="fit-text">You're not serious about applying the concepts through assignments.</span>
+          </li>
+          <li>
+            <span class="fit-icon fit-ban">
+              <img src="../Resources/AdvHomePage/fit-cross-icon.png"/>
+            </span>
+            <span class="fit-text">You want overnight results without putting in the effort.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATION THAT SETS YOU APART SECTION -->
+  <section class="certification-apart-section">
+    <div class="certification-apart-card">
+      <!-- Left Content -->
+      <div class="certification-apart-content">
+        <h2 class="certification-apart-title">Certification That Sets You Apart</h2>
+        <p class="certification-apart-subtitle">This isn't just a certificate — it's proof that you can:</p>
+        
+        <ul class="certification-apart-list">
+          <li>
+            <span class="cert-check-icon">
+              <img src="../Resources/AdvHomePage/certificate-tick-icon.png"/>
+            </span>
+            <span class="cert-list-text">Build psychology-driven campaigns that grow businesses</span>
+          </li>
+          <li>
+            <span class="cert-check-icon">
+              <img src="../Resources/AdvHomePage/certificate-tick-icon.png"/>
+            </span>
+            <span class="cert-list-text">Setup & scale ads using Meta Ads Manager like a pro</span>
+          </li>
+          <li>
+            <span class="cert-check-icon">
+              <img src="../Resources/AdvHomePage/certificate-tick-icon.png"/>
+            </span>
+            <span class="cert-list-text">Track and improve results with Pixel & CAPI events</span>
+          </li>
+          <li>
+            <span class="cert-check-icon">
+              <img src="../Resources/AdvHomePage/certificate-tick-icon.png"/>
+            </span>
+            <span class="cert-list-text">Run full-funnel strategies that turn clicks into customers</span>
+          </li>
+          <li>
+            <span class="cert-check-icon">
+              <img src="../Resources/AdvHomePage/certificate-tick-icon.png"/>
+            </span>
+            <span class="cert-list-text">Optimize with A/B testing and data-backed growth decisions</span>
+          </li>
+        </ul>
+
+        <p class="certification-apart-footer">Add it to your resume, LinkedIn, or client pitches — and stand out as a marketer who drives real business growth.</p>
+
+        <!-- Enroll Button -->
+        <a href="/cartpage" class="btn-certification-enroll">
+          <span class="btn-certification-text">Enroll Now</span>
+        </a>
+      </div>
+
+      <!-- Right Image -->
+      <div class="certification-apart-image">
+        <img src="../Resources/AdvHomePage/certificate.png" alt="ROAS School Of Marketing Certificate" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ROLES YOU CAN EXPECT SECTION -->
+  <section class="roles-expect-section">
+    <div class="roles-expect-container">
+      <!-- Section Title -->
+      <h2 class="roles-expect-title">
+        After completing this course, <span class="roles-highlight">these are the roles you can expect:</span>
+      </h2>
+
+      <!-- Roles Grid -->
+      <div class="roles-grid">
+        <!-- Role Card 1: Meta Ads Specialist -->
+        <div class="role-card">
+          <div class="role-icon">
+            <image class="role-img-light" src="../Resources/AdvHomePage/afc-light1.png"/>
+            <image class="role-img-dark" src="../Resources/AdvHomePage/afc1.png"/>
           </div>
-          <div class="course-for-you-item">
-            <img src="../Resources/HomePage/cross-mark.png" alt="Cross Icon" />
-            <span class="course-for-you-text">You're looking for quick hacks to "get rich overnight"</span>
+          <div class="role-divider"></div>
+          <h3 class="role-title">Meta Ads Specialist</h3>
+          <p class="role-salary">Average Salary: <span class="role-salary-highlight">₹4.5 – ₹8 LPA</span></p>
+        </div>
+
+        <!-- Role Card 2: Performance Marketer -->
+        <div class="role-card">
+          <div class="role-icon">
+            <image class="role-img-light" src="../Resources/AdvHomePage/afc-light2.png"/>
+            <image class="role-img-dark" src="../Resources/AdvHomePage/afc2.png"/>
           </div>
-          <div class="course-for-you-item">
-            <img src="../Resources/HomePage/cross-mark.png" alt="Cross Icon" />
-            <span class="course-for-you-text">You don't care about learning the right process, only
-              shortcuts</span>
+          <div class="role-divider"></div>
+          <h3 class="role-title">Performance Marketer</h3>
+          <p class="role-salary">Average Salary: <span class="role-salary-highlight">₹6 – ₹12 LPA</span></p>
+        </div>
+
+        <!-- Role Card 3: Digital Marketing Executive -->
+        <div class="role-card">
+          <div class="role-icon">
+            <image class="role-img-light" src="../Resources/AdvHomePage/afc-light3.png"/>
+            <image class="role-img-dark" src="../Resources/AdvHomePage/afc3.png"/>
           </div>
-          <div class="course-for-you-item">
-            <img src="../Resources/HomePage/cross-mark.png" alt="Cross Icon" />
-            <span class="course-for-you-text">You're not willing to spend at least a small budget on ads to
-              test</span>
+          <div class="role-divider"></div>
+          <h3 class="role-title">Digital Marketing Executive (Paid Ads Focus)</h3>
+          <p class="role-salary">Average Salary: <span class="role-salary-highlight">₹3 – ₹6 LPA</span></p>
+        </div>
+
+        <!-- Role Card 4: Creative Strategist -->
+        <div class="role-card">
+          <div class="role-icon">
+            <image class="role-img-light" src="../Resources/AdvHomePage/afc-light4.png"/>
+            <image class="role-img-dark" src="../Resources/AdvHomePage/afc4.png"/>
           </div>
-          <div class="course-for-you-item">
-            <img src="../Resources/HomePage/cross-mark.png" alt="Cross Icon" />
-            <span class="course-for-you-text">You're completely satisfied with your current ad
-              performance</span>
+          <div class="role-divider"></div>
+          <h3 class="role-title">Creative Strategist</h3>
+          <p class="role-salary">Average Salary: <span class="role-salary-highlight">₹5 – ₹10 LPA</span></p>
+        </div>
+
+        <!-- Role Card 5: Marketing Funnel Specialist -->
+        <div class="role-card">
+          <div class="role-icon">
+            <image class="role-img-light" src="../Resources/AdvHomePage/afc-light5.png"/>
+            <image class="role-img-dark" src="../Resources/AdvHomePage/afc5.png"/>
           </div>
+          <div class="role-divider"></div>
+          <h3 class="role-title">Marketing Funnel Specialist</h3>
+          <p class="role-salary">Average Salary: <span class="role-salary-highlight">₹5 – ₹9 LPA</span></p>
+        </div>
+
+        <!-- Role Card 6: Freelancer / Meta Ads Manager -->
+        <div class="role-card">
+          <div class="role-icon">
+            <image class="role-img-light" src="../Resources/AdvHomePage/afc-light6.png"/>
+            <image class="role-img-dark" src="../Resources/AdvHomePage/afc6.png"/>
+          </div>
+          <div class="role-divider"></div>
+          <h3 class="role-title">Freelancer / Meta Ads Manager</h3>
+          <p class="role-salary">Earning Potential: <span class="role-salary-highlight">₹30,000 – ₹1,00,000+ per month</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING PLAN SECTION -->
+  <section class="pricing-plan-section" id="pricing-section">
+    <div class="pricing-plan-container">
+      <!-- Section Title -->
+      <h2 class="pricing-plan-title">Pricing plan</h2>
+
+      <!-- Pricing Cards Container -->
+      <div class="pricing-cards-wrapper">
+        <!-- Card 1: Business Growth Plan (Most Popular - Purple) -->
+        <div class="pricing-card pricing-card-featured">
+          <div class="pricing-badge pricing-badge-white">
+            <span>MOST POPULAR</span>
+          </div>
+          <div class="pricing-price">₹49,991</div>
+          <h3 class="pricing-card-title">Business Growth<br>Plan</h3>
+          <p class="pricing-card-subtitle">1-on-1 Mentorship to Scale Your Business with Meta Ads</p>
+          
+          <ul class="pricing-features-list">
+            <li class="pricing-feature">
+              <span class="feature-icon feature-check-white"></span>
+              <span class="feature-text">Everything in the Standard Plan</span>
+            </li>
+            <li class="pricing-feature">
+              <span class="feature-icon feature-check-white"></span>
+              <span class="feature-text">Customized Syllabus</span>
+            </li>
+            <li class="pricing-feature">
+              <span class="feature-icon feature-check-white"></span>
+              <span class="feature-text">Deep Research on Your Business</span>
+            </li>
+            <li class="pricing-feature">
+              <span class="feature-icon feature-check-white"></span>
+              <span class="feature-text">Irresistible Offer Creation</span>
+            </li>
+            <li class="pricing-feature">
+              <span class="feature-icon feature-check-white"></span>
+              <span class="feature-text">1-on-1 Weekly Mentoring (8 Weeks)</span>
+            </li>
+            <li class="pricing-feature">
+              <span class="feature-icon feature-check-white"></span>
+              <span class="feature-text">Personalized Assignment Reviews</span>
+            </li>
+            <li class="pricing-feature">
+              <span class="feature-icon feature-check-white"></span>
+              <span class="feature-text">Strategy, Funnel & Ad Plan</span>
+            </li>
+          </ul>
+          
+          <a href="/cartpage" class="pricing-btn">Choose plan</a>
+          <p class="pricing-refund"><strong>100% refund</strong> if not satisfied</p>
+        </div>
+
+        <!-- Card 2: Value Plan (Middle) -->
+        <div class="pricing-card pricing-card-light">
+          <div class="pricing-price pricing-price-dark">₹14,991</div>
+          <h3 class="pricing-card-title pricing-title-dark">Value Plan</h3>
+          <p class="pricing-card-subtitle pricing-subtitle-dark">For those who want feedback & real-time guidance.</p>
+          
+          <ul class="pricing-features-list">
+            <li class="pricing-feature">
+              <span class="feature-icon feature-check-blue"></span>
+              <span class="feature-text feature-text-dark">Everything in Basic</span>
+            </li>
+            <li class="pricing-feature">
+              <span class="feature-icon feature-check-blue"></span>
+              <span class="feature-text feature-text-dark">2 Live Group Classes per Week (8 Weeks)</span>
+            </li>
+            <li class="pricing-feature">
+              <span class="feature-icon feature-check-blue"></span>
+              <span class="feature-text feature-text-dark">Assignment Reviews & Feedback</span>
+            </li>
+            <li class="pricing-feature">
+              <span class="feature-icon feature-check-blue"></span>
+              <span class="feature-text feature-text-dark">Real Campaign Problem Solving</span>
+            </li>
+            <li class="pricing-feature">
+              <span class="feature-icon feature-check-blue"></span>
+              <span class="feature-text feature-text-dark">1-on-1 Strategy Call (End of Course)</span>
+            </li>
+            <li class="pricing-feature">
+              <span class="feature-icon feature-x"></span>
+              <span class="feature-text feature-text-dark">No Weekly 1-on-1 Mentorship</span>
+            </li>
+            <li class="pricing-feature">
+              <span class="feature-icon feature-x"></span>
+              <span class="feature-text feature-text-dark">No Personalized Offer Creation or Funnel Setup</span>
+            </li>
+          </ul>
+          
+          <a href="/cartpage" class="pricing-btn">Choose plan</a>
+          <p class="pricing-refund pricing-refund-dark"><strong>100% refund</strong> if not satisfied</p>
+        </div>
+
+        <!-- Card 3: Basic Plan (Right) -->
+        <div class="pricing-card pricing-card-standard">
+          <div class="pricing-price pricing-price-dark">₹13,991</div>
+          <h3 class="pricing-card-title pricing-title-dark">Basic Plan</h3>
+          <p class="pricing-card-subtitle pricing-subtitle-dark">For those who prefer learning at their own pace.</p>
+          
+          <ul class="pricing-features-list">
+            <li class="pricing-feature">
+              <span class="feature-icon feature-check-blue"></span>
+              <span class="feature-text feature-text-dark">Full Access to the Course Content</span>
+            </li>
+            <li class="pricing-feature">
+              <span class="feature-icon feature-check-blue"></span>
+              <span class="feature-text feature-text-dark">1 year Access</span>
+            </li>
+            <li class="pricing-feature">
+              <span class="feature-icon feature-check-blue"></span>
+              <span class="feature-text feature-text-dark">All bonuses included</span>
+            </li>
+            <li class="pricing-feature">
+              <span class="feature-icon feature-check-blue"></span>
+              <span class="feature-text feature-text-dark">Certificate of Completion</span>
+            </li>
+            <li class="pricing-feature">
+              <span class="feature-icon feature-check-blue"></span>
+              <span class="feature-text feature-text-dark">Private Community Access</span>
+            </li>
+            <li class="pricing-feature">
+              <span class="feature-icon feature-x"></span>
+              <span class="feature-text feature-text-dark">No Live Group Classes</span>
+            </li>
+            <li class="pricing-feature">
+              <span class="feature-icon feature-x"></span>
+              <span class="feature-text feature-text-dark">No Assignment Reviews</span>
+            </li>
+            <li class="pricing-feature">
+              <span class="feature-icon feature-x"></span>
+              <span class="feature-text feature-text-dark">No 1-on-1 Mentorship</span>
+            </li>
+          </ul>
+          
+          <a href="/cartpage" class="pricing-btn">Choose plan</a>
+          <p class="pricing-refund pricing-refund-dark"><strong>100% refund</strong> if not satisfied</p>
         </div>
       </div>
     </div>
@@ -1186,83 +1421,184 @@
       <h2 class="faq-title">Frequently Asked Questions</h2>
 
       <div class="faq-list">
+        <!-- FAQ Item 1 -->
         <details class="faq-item" open>
           <summary class="faq-summary">
             <span class="faq-icon" aria-hidden="true"></span>
-            <span class="faq-q">How is this different from free YouTube tutorials?</span>
+            <div class="faq-content">
+              <span class="faq-q">Is this course suitable for beginners?</span>
+            </div>
           </summary>
-
           <div class="faq-panel">
-            <p class="faq-a">
-              Most free tutorials give scattered information. This course is
-              structured step-by-step, guiding you from opening Ads Manager to
-              running your first campaign — without the confusion.
-            </p>
+            <p class="faq-a">This is an advanced-level program. You should understand basic Meta Ads concepts before joining. If you're completely new, we recommend starting with the beginner course first.</p>
           </div>
         </details>
+        <div class="faq-divider"></div>
 
+        <!-- FAQ Item 2 -->
         <details class="faq-item">
           <summary class="faq-summary">
             <span class="faq-icon" aria-hidden="true"></span>
-            <span class="faq-q">How long is the course?</span>
+            <div class="faq-content">
+              <span class="faq-q">Do I need to know how to run ads before joining?</span>
+            </div>
           </summary>
           <div class="faq-panel">
-            <p class="faq-a">
-              The course is designed to be completed in a few hours, making it
-              accessible for busy professionals.
-            </p>
+            <p class="faq-a">Basic familiarity with Ads Manager helps, but you don't need advanced skills. We teach you targeting, offers, funnels, psychology, testing, scaling — everything that actually drives ROI.</p>
           </div>
         </details>
+        <div class="faq-divider"></div>
 
+        <!-- FAQ Item 3 -->
         <details class="faq-item">
           <summary class="faq-summary">
             <span class="faq-icon" aria-hidden="true"></span>
-            <span class="faq-q">Do I need any tools or paid software?</span>
+            <div class="faq-content">
+              <span class="faq-q">What makes this course different from other Meta Ads courses?</span>
+            </div>
           </summary>
           <div class="faq-panel">
-            <p class="faq-a">
-              No, you don't need any tools or paid software. The course
-              provides all the tools and software you need to get started.
-            </p>
+            <p class="faq-a">Most courses teach you where to click in Ads Manager.<br><br>This course teaches you:<br>• Buyer psychology<br>• Funnel building<br>• Offer creation<br>• Scaling systems<br>• CAC & CLTV<br>• Creative strategy<br>• The latest Meta updates (including Andromeda)<br><br>This is real marketing, not dashboard training.</p>
           </div>
         </details>
+        <div class="faq-divider"></div>
 
+        <!-- FAQ Item 4 -->
         <details class="faq-item">
           <summary class="faq-summary">
             <span class="faq-icon" aria-hidden="true"></span>
-            <span class="faq-q">Do I need prior experience with marketing or Facebook
-              Ads?</span>
+            <div class="faq-content">
+              <span class="faq-q">How long is the course?</span>
+            </div>
           </summary>
           <div class="faq-panel">
-            <p class="faq-a">
-              No prior experience is required. The course is designed to be
-              accessible for beginners.
-            </p>
+            <p class="faq-a">This is an 8-week cohort. Each week, we cover 2 modules with assignments, practical tasks, and live sessions.</p>
           </div>
         </details>
+        <div class="faq-divider"></div>
 
+        <!-- FAQ Item 5 -->
         <details class="faq-item">
           <summary class="faq-summary">
             <span class="faq-icon" aria-hidden="true"></span>
-            <span class="faq-q">Will this course work for my business?</span>
+            <div class="faq-content">
+              <span class="faq-q">Will I get live classes?</span>
+            </div>
           </summary>
           <div class="faq-panel">
-            <p class="faq-a">
-              Yes, the course is designed to be accessible for beginners.
-            </p>
+            <p class="faq-a">Yes.<br><br>Depending on your plan:<br>• Value Plan → 2 live group classes per week<br>• Business Growth Plan → Weekly 1:1 mentorship<br>• Basic Plan → Self-paced (no live classes)<br><br>Choose what's right for you.</p>
           </div>
         </details>
+        <div class="faq-divider"></div>
 
+        <!-- FAQ Item 6 -->
         <details class="faq-item">
           <summary class="faq-summary">
             <span class="faq-icon" aria-hidden="true"></span>
-            <span class="faq-q">What happens after I finish this course?</span>
+            <div class="faq-content">
+              <span class="faq-q">What if I miss a live class?</span>
+            </div>
           </summary>
           <div class="faq-panel">
-            <p class="faq-a">
-              After completing the course, you'll receive a certificate of
-              completion and access to the course materials.
-            </p>
+            <p class="faq-a">All sessions are recorded. You can watch the recordings anytime.</p>
+          </div>
+        </details>
+        <div class="faq-divider"></div>
+
+        <!-- FAQ Item 7 -->
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span class="faq-icon" aria-hidden="true"></span>
+            <div class="faq-content">
+              <span class="faq-q">Will you help me with my campaigns?</span>
+            </div>
+          </summary>
+          <div class="faq-panel">
+            <p class="faq-a">Yes — in the Value Plan and Business Growth Plan.<br><br>You'll get:<br>• Assignment reviews<br>• Real campaign troubleshooting<br>• 1:1 strategy calls (Value)<br>• Weekly mentoring (Business Growth Plan)<br><br>Basic Plan does not include personalized support.</p>
+          </div>
+        </details>
+        <div class="faq-divider"></div>
+
+        <!-- FAQ Item 8 -->
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span class="faq-icon" aria-hidden="true"></span>
+            <div class="faq-content">
+              <span class="faq-q">Will this course help my business grow?</span>
+            </div>
+          </summary>
+          <div class="faq-panel">
+            <p class="faq-a">Absolutely — especially if you're a business owner.<br><br>You'll learn:<br>• How to create offers customers actually buy<br>• How to build funnels<br>• How to reduce CAC<br>• How to increase CLTV<br>• How to scale without increasing costs<br><br>Business Growth Plan includes a custom growth strategy built for your business.</p>
+          </div>
+        </details>
+        <div class="faq-divider"></div>
+
+        <!-- FAQ Item 9 -->
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span class="faq-icon" aria-hidden="true"></span>
+            <div class="faq-content">
+              <span class="faq-q">Do I need a high ad budget to apply this course?</span>
+            </div>
+          </summary>
+          <div class="faq-panel">
+            <p class="faq-a">Not at all. We teach testing, targeting, and creative strategy that works even with small budgets. When you're ready to scale, you'll know exactly how to do it.</p>
+          </div>
+        </details>
+        <div class="faq-divider"></div>
+
+        <!-- FAQ Item 10 -->
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span class="faq-icon" aria-hidden="true"></span>
+            <div class="faq-content">
+              <span class="faq-q">What if I get stuck or confused?</span>
+            </div>
+          </summary>
+          <div class="faq-panel">
+            <p class="faq-a">You'll get support based on your plan:<br>• Value Plan: Live group support + assignment reviews<br>• Business Plan: Weekly 1:1 help<br>• Basic Plan: Community support<br><br>You'll never be left stuck.</p>
+          </div>
+        </details>
+        <div class="faq-divider"></div>
+
+        <!-- FAQ Item 11 -->
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span class="faq-icon" aria-hidden="true"></span>
+            <div class="faq-content">
+              <span class="faq-q">Do I get bonuses with this course?</span>
+            </div>
+          </summary>
+          <div class="faq-panel">
+            <p class="faq-a">Yes — all plans include:<br>• ROASGuy Toolkit<br>• Ad Performance Bundle<br>• Survival Pack<br><br>Higher plans include even more personalized help.</p>
+          </div>
+        </details>
+        <div class="faq-divider"></div>
+
+        <!-- FAQ Item 12 -->
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span class="faq-icon" aria-hidden="true"></span>
+            <div class="faq-content">
+              <span class="faq-q">Is there a refund policy?</span>
+            </div>
+          </summary>
+          <div class="faq-panel">
+            <p class="faq-a">Yes. We offer a 100% refund within the first 2 weeks if you're not satisfied. No questions asked.</p>
+          </div>
+        </details>
+        <div class="faq-divider"></div>
+
+        <!-- FAQ Item 13 -->
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span class="faq-icon" aria-hidden="true"></span>
+            <div class="faq-content">
+              <span class="faq-q">How do I contact you?</span>
+            </div>
+          </summary>
+          <div class="faq-panel">
+            <p class="faq-a">You can reach out anytime:<br><br>📞 Mobile: +91 8400 786 843<br>📧 Email: support@roasschoolofmarketing.com</p>
           </div>
         </details>
       </div>
@@ -1364,6 +1700,212 @@
       // const selectedLang = btn.dataset.lang;  // "en" | "hi"
       // swap video URL / thumbnail here if needed
     });
+  </script>
+
+  <!-- Stats Carousel Auto-slide and Drag Functionality (Infinite Loop) -->
+  <script>
+    (function() {
+      const carousel = document.getElementById('stats-carousel');
+      const track = document.getElementById('stats-carousel-track');
+      if (!carousel || !track) return;
+
+      const originalSlides = Array.from(track.querySelectorAll('.stats-carousel-slide'));
+      if (originalSlides.length === 0) return;
+
+      const slideCount = originalSlides.length;
+      let autoSlideInterval;
+      let isDragging = false;
+      let startX, scrollLeft;
+      let isTransitioning = false;
+
+      // Clone slides for infinite loop - append clones at the end
+      originalSlides.forEach(slide => {
+        const clone = slide.cloneNode(true);
+        clone.classList.add('clone');
+        track.appendChild(clone);
+      });
+
+      // Also prepend clones at the beginning for backward scrolling
+      originalSlides.slice().reverse().forEach(slide => {
+        const clone = slide.cloneNode(true);
+        clone.classList.add('clone');
+        track.insertBefore(clone, track.firstChild);
+      });
+
+      // Get all slides including clones
+      const allSlides = track.querySelectorAll('.stats-carousel-slide');
+
+      // Get slide width including gap
+      function getSlideWidth() {
+        const slide = allSlides[0];
+        const style = getComputedStyle(track);
+        const gap = parseFloat(style.gap) || 58;
+        return slide.offsetWidth + gap;
+      }
+
+      // Current logical index (0 to slideCount-1)
+      let currentIndex = 0;
+
+      // Initialize position to first real slide (after prepended clones)
+      function initPosition() {
+        const slideWidth = getSlideWidth();
+        carousel.scrollLeft = slideWidth * slideCount;
+      }
+
+      // Scroll to a specific position smoothly
+      function scrollToPosition(position, smooth = true) {
+        carousel.scrollTo({
+          left: position,
+          behavior: smooth ? 'smooth' : 'auto'
+        });
+      }
+
+      // Go to next slide with infinite loop
+      function nextSlide() {
+        if (isTransitioning) return;
+        isTransitioning = true;
+        
+        const slideWidth = getSlideWidth();
+        const currentScroll = carousel.scrollLeft;
+        const targetScroll = currentScroll + slideWidth;
+        
+        scrollToPosition(targetScroll, true);
+        
+        currentIndex++;
+        if (currentIndex >= slideCount) {
+          currentIndex = 0;
+        }
+      }
+
+      // Check if we need to reset position for infinite loop
+      function checkInfiniteLoop() {
+        const slideWidth = getSlideWidth();
+        const currentScroll = carousel.scrollLeft;
+        const totalRealWidth = slideWidth * slideCount;
+        
+        // If scrolled past the last real slide (into clones at end)
+        if (currentScroll >= totalRealWidth * 2) {
+          carousel.scrollLeft = currentScroll - totalRealWidth;
+        }
+        // If scrolled before the first real slide (into clones at beginning)
+        else if (currentScroll < totalRealWidth) {
+          // But we need to handle this case more carefully
+          if (currentScroll <= 0) {
+            carousel.scrollLeft = currentScroll + totalRealWidth;
+          }
+        }
+        
+        isTransitioning = false;
+      }
+
+      // Listen for scroll end to check infinite loop
+      let scrollTimeout;
+      carousel.addEventListener('scroll', () => {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+          checkInfiniteLoop();
+        }, 100);
+      });
+
+      // Auto-slide function
+      function startAutoSlide() {
+        autoSlideInterval = setInterval(() => {
+          nextSlide();
+        }, 5000); // 5 seconds
+      }
+
+      // Stop auto-slide
+      function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+      }
+
+      // Restart auto-slide after delay
+      function restartAutoSlide() {
+        stopAutoSlide();
+        setTimeout(startAutoSlide, 3000); // Resume after 3 seconds
+      }
+
+      // Get the nearest slide index based on scroll position
+      function getNearestSlideIndex() {
+        const slideWidth = getSlideWidth();
+        return Math.round(carousel.scrollLeft / slideWidth);
+      }
+
+      // Snap to nearest slide
+      function snapToNearestSlide() {
+        const slideWidth = getSlideWidth();
+        const nearestIndex = getNearestSlideIndex();
+        scrollToPosition(nearestIndex * slideWidth, true);
+      }
+
+      // Mouse drag handlers
+      carousel.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startX = e.pageX - carousel.offsetLeft;
+        scrollLeft = carousel.scrollLeft;
+        carousel.style.cursor = 'grabbing';
+        stopAutoSlide();
+      });
+
+      carousel.addEventListener('mouseleave', () => {
+        if (isDragging) {
+          isDragging = false;
+          carousel.style.cursor = 'grab';
+          snapToNearestSlide();
+          restartAutoSlide();
+        }
+      });
+
+      carousel.addEventListener('mouseup', () => {
+        if (isDragging) {
+          isDragging = false;
+          carousel.style.cursor = 'grab';
+          snapToNearestSlide();
+          restartAutoSlide();
+        }
+      });
+
+      carousel.addEventListener('mousemove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        const x = e.pageX - carousel.offsetLeft;
+        const walk = (x - startX) * 1.5; // Scroll speed multiplier
+        carousel.scrollLeft = scrollLeft - walk;
+      });
+
+      // Touch handlers for mobile
+      carousel.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        startX = e.touches[0].pageX - carousel.offsetLeft;
+        scrollLeft = carousel.scrollLeft;
+        stopAutoSlide();
+      });
+
+      carousel.addEventListener('touchend', () => {
+        if (isDragging) {
+          isDragging = false;
+          snapToNearestSlide();
+          restartAutoSlide();
+        }
+      });
+
+      carousel.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        const x = e.touches[0].pageX - carousel.offsetLeft;
+        const walk = (x - startX) * 1.5;
+        carousel.scrollLeft = scrollLeft - walk;
+      });
+
+      // Pause auto-slide on hover
+      carousel.addEventListener('mouseenter', stopAutoSlide);
+      carousel.addEventListener('mouseleave', () => {
+        if (!isDragging) restartAutoSlide();
+      });
+
+      // Initialize position and start auto-slide on page load
+      initPosition();
+      startAutoSlide();
+    })();
   </script>
 </body>
 

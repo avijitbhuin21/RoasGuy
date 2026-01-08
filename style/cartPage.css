@@ -640,7 +640,6 @@ input:checked+.slider:before {
 /* Footer Image */
 .footer-image {
   width: 100%;
-  max-width: 1523px;
   display: flex;
   justify-content: center;
   padding-bottom: 0;

@@ -548,7 +548,6 @@ body.dark-mode .email-icon-dark {
 /* Footer Image */
 .footer-image {
   width: 100%;
-  max-width: 1523px;
   display: flex;
   justify-content: center;
   padding-bottom: 0;
