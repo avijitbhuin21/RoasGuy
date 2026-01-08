@@ -345,13 +345,13 @@ input:checked+.slider:before {
 }
 
 .main-title {
-  font-family: "Lexend", sans-serif;
+  font-family: "Neue Montreal", sans-serif;
   font-weight: 600;
   font-size: 64px;
   line-height: 80px;
   text-align: center;
   color: var(--text-primary);
-  max-width: 901px;
+  max-width: 1080px;
   margin: 0 auto;
 }
 
@@ -560,6 +560,11 @@ input:checked+.slider:before {
   font-size: 20.65px;
   line-height: 26px;
   color: var(--text-black);
+}
+
+/* Mobile Pay Now Button - Hidden by default */
+.pay-now-mobile {
+  display: none;
 }
 
 /* =========================================
@@ -933,13 +938,14 @@ body.dark-mode .footer-image .footer-svg-dark {
 
   /* Mobile CTA Button */
   .pay-button-wrapper {
-    width: 248.86px;
-    padding: 7px 13px;
-    gap: 6px;
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 15px;
+    gap: 15px;
     border-radius: 20px;
     margin: 40px auto 0;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .price-section {
@@ -959,8 +965,8 @@ body.dark-mode .footer-image .footer-svg-dark {
   .pay-btn {
     width: auto;
     padding: 10px 20px;
-    margin-left: 32px;
-    gap: 3.5px;
+    margin-left: 0;
+    gap: 8px;
     border-radius: 20px;
   }
 
@@ -984,6 +990,33 @@ body.dark-mode .footer-image .footer-svg-dark {
     height: 1px;
     background: #ffffff;
     margin: 0px auto;
+  }
+
+  /* Mobile Pay Now Button */
+  .pay-now-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15.0955px 30.1909px;
+    gap: 6.86px;
+    position: relative;
+    /* Use relative flow instead of absolute to sit above footer */
+    width: 301.87px;
+    height: 42.19px;
+    margin: 20px auto;
+
+    background: linear-gradient(90deg, #1acfff 0%, #0076ff 100%);
+    border: 0.686158px solid #1b223c;
+    border-radius: 8.23389px;
+
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16.4678px;
+    line-height: 27px;
+    color: #ffffff;
+    cursor: pointer;
   }
 
   /* Mobile Features Section */
@@ -1031,6 +1064,12 @@ body.dark-mode .footer-image .footer-svg-dark {
     width: 100%;
     max-width: 302px;
     gap: 3px;
+  }
+
+  .feature-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
   }
 
   .feature-icon {
