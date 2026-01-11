@@ -18,3 +18,9 @@ def _read_homepage_html() -> str:
 async def homepage() -> HTMLResponse:
     content = _read_homepage_html()
     return HTMLResponse(content=content, status_code=200)
+
+
+@router.get("/value-course", response_class=HTMLResponse)
+async def valueCourse() -> HTMLResponse:
+    content = _read_homepage_html()
+    return HTMLResponse(content=content, status_code=200)
